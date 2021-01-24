@@ -1,0 +1,109 @@
+/* Default Markdown CSS */
+
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+*  Copyright (c) Microsoft Corporation. All rights reserved.
+*  Licensed under the MIT License. See License.txt in the project root for license information.
+*--------------------------------------------------------------------------------------------*/
+
+body {
+    font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+    font-size: var(--vscode-markdown-font-size, 16px);
+    padding: 0 26px;
+    line-height: var(--vscode-markdown-line-height, 22px);
+}
+
+body.scrollBeyondLastLine {
+    margin-bottom: calc(100vh - 22px);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 1px solid -webkit-focus-ring-color;
+    outline-offset: -1px;
+}
+
+h1 {
+    padding-bottom: 0.3em;
+    line-height: 1.2;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+/* Custom Styling */
+
+body {
+    font-family: 'Indie Flower', cursive;
+    background-color: #faf6f2;
+    color: #465854;
+}
+
+h1 {
+    padding-top: 0.5em;
+    font-family: 'Nothing You Could Do', cursive;
+    color: #523835;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-family: 'Nothing You Could Do', cursive;
+    color: #523835;
+}
+
+p {
+    line-height: 2em;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* padding: 5px; */
+    justify-content: flex-start;
+    max-width: 800px;
+}
+
+.container figure{
+    width: 250px;
+    margin: 5px;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+figcaption {
+    padding-bottom: 5px;
+}
+
+details {
+    padding: .5em .5em 0;
+}
+
+summary{
+    font-family: 'Nothing You Could Do', cursive;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    margin-bottom: .5em;
+}
