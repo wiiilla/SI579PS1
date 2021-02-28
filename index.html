@@ -2,77 +2,101 @@
 <html>
 
 <head>
-	<title>Willa's Favorite Things</title>
-	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-	<link rel="stylesheet" href="styles.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <title>Willa's Favorite Things</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/jeezy@1.11.2/lib/jeezy.min.js"></script>
+    <script defer src="blably.js"></script>
+
 </head>
 
 <body>
-	<header>
-		<h1>My Favorite Things</h1>
-	</header>
+    <header>
+        <h1>My Favorite Things</h1>
+    </header>
 
-	<main>
-		<section>
-			<p>Bubbly squashes and flat rice dumplings,<br> Big ass tomatoes and mini chewy cookies,<br> Boba tea
-				posicles its brown sugar dripping,<br> These are a few of my favorite things.</p>
-			<p>When the flower bloom,<br> When the cake steam,<br> When I'm enjoying life,<br> I simply snap my favorite
-				things,<br> And show o~~~ff to friends!</p>
+    <main>
+        <aside>
+            <p>Bubbly Blably</p>
+            <svg height="240" width="300" id='blably'></svg>
+            <p>Courtesy of <a href="https://bl.ocks.org/HarryStevens/54d01f118bc8d1f2c4ccd98235f33848" target="_blank">Harry Steven's block</a></p>
+        </aside>
 
-			<details>
-				<summary>
-					Written by Willa Hua
-				</summary>
-				<p>Paying tribute to the delightful song <em><a
-							href="https://en.wikipedia.org/wiki/My_Favorite_Things_(song)">My Favorite Things</a></em>
-					by Oscar Hammerstein II and Richard Rodgers.
-				</p>
-			</details>
+        <section id="lyrics">
+            <p>Bubbly squashes and flat rice dumplings,<br> Big ass tomatoes and mini chewy cookies,<br> Boba tea posicles its brown sugar dripping,<br> These are a few of my favorite things.</p>
+            <p>When the flower bloom,<br> When the cake steam,<br> When I'm enjoying life,<br> I simply snap my favorite things,
+                <br> And show o~~~ff to friends!</p>
+
+            <details>
+                <summary>
+                    Written by Willa Hua
+                </summary>
+                <p>Paying tribute to the delightful song <em><a
+							href="https://en.wikipedia.org/wiki/My_Favorite_Things_(song)">My Favorite Things</a></em> by Oscar Hammerstein II and Richard Rodgers.
+                </p>
+            </details>
 
 
-		</section>
+        </section>
 
-		<section>
-			<hr>
-			<h2 id="a-handful-of-honorable-mentions">A <em>HANDFUL</em> of honorable mentions</h2>
 
-			<div class="container">
-				<figure>
-					<figcaption>Bubbly squashes</figcaption>
-					<img src="img/MarvellousSquash.jpg" alt="Bubbly squashes"><br>
+        <section>
+            <hr>
+            <h2 id="a-handful-of-honorable-mentions">A <em>HANDFUL</em> of honorable mentions</h2>
 
-				</figure>
-				<figure>
-					<figcaption>Flat rice dumplings</figcaption>
-					<img src="img/RiceDumplings.jpg" alt="Flat rice dumplings"><br>
-				</figure>
-				<figure>
-					<figcaption>Yield from my big ass tomato</figcaption>
-					<img src="img/CherryTomatoes.jpg" alt="Cherry tomatoes yield from my big ass tomato"><br>
-				</figure>
-				<figure>
-					<figcaption>Black sugar bubble tea icecream</figcaption>
-					<img src="img/BlackSugarBubbleTeaIceCream.jpg" alt="Black sugar bubble tea icecream posicle"><br>
-				</figure>
-				<figure>
-					<figcaption>Blooming flowers</figcaption>
-					<img src="img/SummerWildFlowers.jpg" alt="Blooming flowers"><br>
-				</figure>
-				<figure>
-					<figcaption>Steaming stuffed cakes</figcaption>
-					<img src="img/stuffedHotCake.jpg" alt="Steaming stuffed cakes">
-				</figure>
-			</div>
-		</section>
-	</main>
+            <div class="container">
+                <figure>
+                    <figcaption>Bubbly squashes</figcaption>
+                    <img src="img/MarvellousSquash.jpg" alt="Bubbly squashes"><br>
 
-	<footer>
-		<hr>
-		<p>Copyright: Willa Hua 2021</p>
-	</footer>
+                </figure>
+                <figure>
+                    <figcaption>Flat rice dumplings</figcaption>
+                    <img src="img/RiceDumplings.jpg" alt="Flat rice dumplings"><br>
+                </figure>
+                <figure>
+                    <figcaption>Yield from my big ass tomato</figcaption>
+                    <img src="img/CherryTomatoes.jpg" alt="Cherry tomatoes yield from my big ass tomato"><br>
+                </figure>
+                <figure>
+                    <figcaption>Black sugar bubble tea icecream</figcaption>
+                    <img src="img/BlackSugarBubbleTeaIceCream.jpg" alt="Black sugar bubble tea icecream posicle"><br>
+                </figure>
+                <figure>
+                    <figcaption>Blooming flowers</figcaption>
+                    <img src="img/SummerWildFlowers.jpg" alt="Blooming flowers"><br>
+                </figure>
+                <figure>
+                    <figcaption>Steaming stuffed cakes</figcaption>
+                    <img src="img/stuffedHotCake.jpg" alt="Steaming stuffed cakes">
+                </figure>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>Copyright: Willa Hua 2021</p>
+
+        <a class="icons" href="https://mail.google.com/mail/?view=cm&fs=1&to=willa.bhua@gmail.com&su=Shoot a Message to Willa Here!&body=">
+            <i class="fa fa-envelope-square fa-lg" aria-hidden="true"></i> Shot me an email
+        </a>
+        <a class="icons" href="https://www.linkedin.com/in/wiiilla/">
+            <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i> Connect on LinkedIn
+        </a>
+
+    </footer>
 
 </body>
 

@@ -49,6 +49,8 @@ body {
     font-family: 'Indie Flower', cursive;
     background-color: #faf6f2;
     color: #465854;
+    width: 780px;
+    margin: auto;
 }
 
 h1 {
@@ -64,6 +66,11 @@ h2 {
 }
 
 p {
+    line-height: 1em;
+    margin: 5px 2px 5px 2px;
+}
+
+#lyrics p {
     line-height: 2em;
 }
 
@@ -106,4 +113,24 @@ details[open] {
 
 details[open] summary {
     margin-bottom: .5em;
+}
+
+footer{
+    margin-bottom:20pt;
+}
+
+.icons{
+    color: #6085ff;
+    margin-right: 20px;
+}
+
+aside {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  float: right;
+  font-style: italic;
+  font-size: 1.2em;
+  background-color: #fcecd9;
+  border-radius: 8px;
 }
